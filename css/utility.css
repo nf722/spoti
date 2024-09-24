@@ -1,0 +1,84 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-gray {
+    background-color: #121212;
+    color: white;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 10px;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+/* Dark scroll bar */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scroll bar */
+    background-color: #333; /* Background color of the scroll bar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #666; /* Color of the scroll bar handle */
+    border-radius: 5px; /* Border radius of the scroll bar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Color of the scroll bar handle on hover */
+}
+.gola{
+    width: 23px;
+    height: 24px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    position:relative;
+    top: 147px;
+    left: 100px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+  
+  }
+@media (max-width: 1200px){
+   .gola{
+    width: 23px;
+    height: 24px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    position:inherit;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+   }
+}
