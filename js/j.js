@@ -1,5 +1,4 @@
-console.log("Let's start writing js")
-console.log("Let's start writing js")
+
 let currentSong = new Audio();
 let songs
 let currFolder
@@ -136,7 +135,6 @@ async function main() {
 
     //Listen for time update function
     currentSong.addEventListener("timeupdate", () => {
-        console.log(currentSong.currentTime, currentSong.duration);
         document.querySelector(".songtime").innerHTML =
             `${secondsToMinutesSeconds(currentSong.currentTime)}/
          ${secondsToMinutesSeconds(currentSong.currentduration)}`
@@ -203,16 +201,3 @@ document.querySelector(".volume>img").addEventListener("click", e=>{
 }
 
 main()
-
-
-
-//above the main function
-// //play the first song
-// var audio = new Audio(songs[0]);
-// // audio.play();
-
-// audio.addEventListener("loadeddata", () => {
-//     //  let duration=audio.duration;
-//     console.log(audio.duration, audio.currentSrc, audio.currentTime)
-//     //The duration variable now holds the duration (in seconds) of the audio clip
-// });
